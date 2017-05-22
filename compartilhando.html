@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WorkCode</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div class="topo">
+		<div class="container">
+				<header>
+					<div class="header">
+						
+						<div class="row">
+							
+							<div class="col-8">
+								<a href="index.html"><img src="img/logo.png" alt=""></a>
+							</div>
+							<div class="col-4">
+							<ul class="nav">
+								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="conteudo.html">Conteudo</a></li>
+								<li class="nav-item"><a class="nav-link" href="projeto.html">Projeto</a></li>
+								<li class="nav-item"><a class="nav-link" href="contatos.html">Contatos</a></li>
+							</ul>
+							</div>
+						</div><!-- row -->
+					</div><!-- header -->
+				</header>
+			
+		</div>
+	<div class="linha"></div>
+	</div>
+		<div id="main-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<!-- Content -->
+							<article class="box post">
+								<!-- <a href="#" class="image-featured"><img src="img/pic01.jpg" alt="" /></a> -->
+								<header>
+									<h2>Compartilhando seu código através do GitHub</h2>
+									<p>Para que o mundo possa descobrir nosso incrível projeto, temos que
+									compartilhá-lo na internet. <br>
+									Para isso, utilizaremos uma aplicação web chamada GitHub</p>
+								</header>
+								<section>
+									<header>
+										<h3 class="text-left">Criando uma conta no GitHub</h3>
+									</header>
+									<p>
+										O primeiro passo é criar uma conta no GitHub. Para projetos de código
+										aberto, não há custo nenhum! Com um navegador, acesse: <a href="https://github.com/">https://github.com/</a> <br>
+										Preencha seu nome, e-mail e escolha uma senha.
+									</p>
+									<img src="img/conta-github.png" alt="">
+									<p>
+										Então, selecione o plano apropriado e fnalize o cadastro, clicando em
+										Finish Signup.
+									</p>
+									<img src="img/conta-github2.png" alt="">
+									<p>Se necessário, verifque o e-mail.</p>
+								</section>
+								<section>
+									<header>
+										<h3 class="text-left">Criando um repositório no GitHub</h3>
+									</header>
+									<p>
+										Agora podemos criar um repositório remoto, que fcará disponível para
+										todos da internet. Para isso, clique no botão New Repository após acessar:
+										<a href="https://github.com/">https://github.com/</a>
+									</p>
+									<img src="img/conta-github3.png" alt="">
+									<p>
+										No <i>Repository name</i>, devemos preencher o nome do repositório remoto.
+									No nosso caso, vamos preencher com “citacoes”. Deixe o repositório como
+									<i>Public</i>, para que qualquer pessoa consiga ver o seu código. As demais opções
+									podem fcar com os valores padrão. Finalmente, devemos clicar em <i>Create
+									repository.</i>
+									</p>
+									<img src="img/conta-github4.png" alt="">
+									<p>Pronto, já foi criado um repositório vazio lá no GitHub.</p>
+								</section>
+								<section>
+									<header>
+										<h3 class="text-left">Apontando seu projeto para o GitHub</h3>
+									</header>
+									<p>
+										Devemos agora apontar o repositório da nossa máquina para o repositório do GitHub. <br>
+										Em um terminal, certifque-se de estar no diretório <i>citacoes</i>, que tem o repositório local: <br>
+										<p class="dif">$ cd ~/citacoes</p><br>
+										<p>Então, execute o comando git remote, conforme o que segue:</p>
+										<p class="dif">$ git remote add origin https://github.com/fulanodasilva/
+										citacoes.git</p><br>
+										Não deixe de alterar fulanodasilva para o seu usuário do GitHub.
+										Não deve aparecer nenhuma mensagem. <br>
+										Com o comando anterior, apontamos o nome origin para o repositório
+										lá do GitHub.
+									</p>
+								</section>
+								<section>
+									<header>
+										<h3 class="text-left">Enviando as alterações para o GitHub</h3>
+									</header>
+									<p>
+										Com o repositório remoto confgurado, podemos enviar nossas mudanças para o GitHub e, por consequência, para todo o mundo. <br>
+										Para isso, basta executar o comando <i>git push</i>, da seguinte forma: <br>
+										<p class="dif">$ git push origin master </p> <br>
+										Com o comando anterior, enviamos as alterações para o repositório remoto confgurado com o nome <i>origin.</i>
+										Forneça seu usuário e senha do GitHub quando solicitado. Deverá aparecer algo semelhante à seguinte saída: 
+										</p>
+										<p class="dif">
+											Username for ’https://github.com’: fulanodasilva <br>
+											Password for ’https://fulanodasilva@github.com’: <br>
+											Counting objects: 6, done. <br>
+											Delta compression using up to 4 threads. <br>
+											Compressing objects: 100% (4/4), <br>
+											Writing objects: 100% (6/6), 609 bytes | 0 bytes/s, done. <br>
+											Total 6 (delta 1), reused 0 (delta 0) <br>
+											To https://github.com/fulanodasilva/citacoes.git <br>
+											* [new branch] master -> master	<br>
+										</p> <br>
+									Vá até a página do seu projeto no GitHub: <a href="https://github.com/fulanodasilva/citacoes">https://github.com/fulanodasilva/citacoes</a> <br>
+									</p>
+									<img src="img/conta-github5.png" alt=""> <br>
+									
+									<p>Observe que o arquivo que você enviou já está disponível para qualquer
+									pessoa da internet. Avise seu primo, sua vizinha, todo mundo! <br>
+									É possível ver todas as alterações no projeto até agora (no caso, foram duas), através do endereço: <a href="https://github.com/fulanodasilva/citacoes/
+									commits/master">https://github.com/fulanodasilva/citacoes/
+									commits/master</a>
+									</p>
+									<img src="img/conta-github6.png" alt=""> 
+									<p>
+										Se clicarmos na última alteração, por exemplo, é possível ver as mudanças que foram feitas. Fascinante, não?
+									</p>
+									<img src="img/conta-github7.png" alt="">
+								</section>
+
+							</article>
+					</div>	
+				</div>		
+			</div>
+		</div>
+	</section>
+	
+	<div class="linha"></div>
+	<footer class="fim">
+	<section>
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul class="links">
+							<li>Copyright &copy; 2017 - Todos os direitos reservados a WorkCode</li>
+							<li><img src="img/logob.png" alt=""> <a href="index.html"></a></li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</section>
+	</footer>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/tether.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
